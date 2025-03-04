@@ -83,7 +83,7 @@ The program asks the user for the name of the file to compress and the name of t
 
 The program checks the size of the input file. If the file is too small (less than 1024 bytes), it skips compression.
 
-Compression Process:
+3. Compression Process:
 
 The program reads the input file in chunks of 1024 bytes.
 
@@ -91,57 +91,41 @@ Each chunk is compressed using zlib's deflate function.
 
 The compressed data is written to the output file.
 
-Completion:
+4. Completion:
 
 Once the entire file is compressed, the program cleans up the zlib resources using deflateEnd.
 
-Key Points to Note:
-zlib Initialization:
+<h2>Key Points to Note:</h2>
+
+1. zlib Initialization:
 
 The deflateInit2 function is used to initialize the compression process. It allows specifying parameters like compression level, window size, and memory usage.
 
-Buffering:
+2. Buffering:
 
 The program uses buffers (inBuffer and outBuffer) to handle data in chunks. This is efficient for processing large files without loading the entire file into memory.
 
-Gzip Format:
+3. Gzip Format:
 
 The program uses a window size of 31, which is specific to the gzip format. This ensures that the output file is compatible with gzip tools.
 
-Error Handling:
+4. Error Handling:
 
 The program checks for errors when opening files and initializing zlib. If an error occurs, it prints a message and exits gracefully.
 
-Example Usage:
-Input File:
+5. Limitations:
+Small Files: The program skips compression for files smaller than 1024 bytes, as compressing very small files may not be efficient.
 
-Suppose you have a file named example.txt with some text content.
-
-Running the Program:
-
-When you run the program, it will prompt:
-
-Copy
-Enter the file to compress: example.txt
-Enter the output file name (e.g., output.gz): example.gz
-Output:
-
-The program will create a compressed file named example.gz containing the compressed data from example.txt.
-
-Limitations:
-Small Files:
-
-The program skips compression for files smaller than 1024 bytes, as compressing very small files may not be efficient.
-
-Error Handling:
+6. Error Handling:
 
 The program does not handle all possible errors (e.g., insufficient memory, disk full). Additional error handling could be added for robustness.
 
-File Type:
+7. File Type:
 
 The program assumes the input file is a binary file. For text files, the compression process is the same, but the program does not differentiate between file types.
 
-Conclusion:
+<h2>Conclusion</h2>
+
 This program demonstrates how to use the zlib library to compress files in C++. It provides a basic framework for file compression, including file handling, buffering, and error checking. The program is suitable for compressing medium to large files and can be extended with additional features like decompression, support for other compression formats, or more advanced error handling.
 
 #OUTPUT
