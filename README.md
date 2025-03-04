@@ -128,4 +128,14 @@ The program assumes the input file is a binary file. For text files, the compres
 
 This program demonstrates how to use the zlib library to compress files in C++. It provides a basic framework for file compression, including file handling, buffering, and error checking. The program is suitable for compressing medium to large files and can be extended with additional features like decompression, support for other compression formats, or more advanced error handling.
 
-#OUTPUT
+<h1>OUTPUT</h1>
+
+![Image](https://github.com/user-attachments/assets/e176e1eb-a6d8-4bd7-99d8-b2665eb1ae06)
+
+![Image](https://github.com/user-attachments/assets/6fbd746f-c118-45db-bc99-985cb42c0244)
+
+![Image](https://github.com/user-attachments/assets/54fb3b95-b3e6-4605-841e-1d61a084c977)
+
+![Image](https://github.com/user-attachments/assets/0d6cd4ba-4ba3-45bc-bf5c-ea23e9b01cdf)
+
+![Image](https://github.com/user-attachments/assets/2d33b5f5-33c2-4a16-93c1-4436bc71c787)
