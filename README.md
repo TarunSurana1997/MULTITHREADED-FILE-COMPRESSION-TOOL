@@ -1,23 +1,23 @@
 <h1>FILE MANAGEMENT TOOL</h1>
 
-<h2>*COMPANY*: CODTECH IT SOLUTIONS
+<h2>COMPANY: CODTECH IT SOLUTIONS
 
-*NAME*: TARUN SURANA
+NAME: TARUN SURANA
 
-*INTERN ID*: CT12KDX
+INTERN ID: CT12KDX
 
-*DOMAIN*: C++ PROGRAMMING
+DOMAIN: C++ PROGRAMMING
 
-*DURATION*: 8 WEEEKS
+DURATION: 8 WEEEKS
 
-*MENTOR*: NEELA SANTOSH</h2>
+MENTOR: NEELA SANTOSH</h2>
 
-<h1>DESCRIPTON OF THE TASK</h1>
+<h2>DESCRIPTON OF THE TASK</h2>
 
 This C++ program is designed to compress a file using the zlib library, which is a widely used library for data compression.
 The program takes an input file, compresses its contents, and writes the compressed data to an output file, typically in .gz format (gzip format). Below is a detailed explanation of the code:
 
-Key Components of the Code:
+<h2>Key Components of the Code</h2>
 
 1. Libraries Used:
 
@@ -73,7 +73,7 @@ The main function prompts the user to enter the input file name and the output f
 
 It then calls the compressFile function to perform the compression.
 
-<h1>Workflow of the Program:</h1>
+<h2>Workflow of the Program:</h2>
 
 1. User Input:
 
